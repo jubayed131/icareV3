@@ -12,7 +12,7 @@
     android:gravity="center"
     android:textSize="22sp"
     android:textColor="#fff"
-    android:background="#000"
+    android:background="@color/colorPrimaryDark"
     android:padding="5dp"
     android:layout_marginBottom="10dp"/>
 <LinearLayout
@@ -30,23 +30,23 @@
     android:layout_marginLeft="10dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Name"
-        android:textColor="#000"
-        android:layout_weight="12"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_weight=".4"
         android:gravity="start"
         android:textAlignment="gravity"
         android:textSize="18sp"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/tvName"
 
-        android:layout_weight="50"
+        android:layout_weight=".6"
         android:gravity="start"
         android:textAlignment="gravity"
-        android:textColor="#000"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"/>
 </LinearLayout>
 
@@ -57,21 +57,21 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Birth Date"
-            android:textColor="#000"
-            android:layout_weight="6"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight=".4"
             android:textSize="18sp"
             android:gravity="start"
             android:textAlignment="gravity"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tvNBirthDate"
-            android:textColor="#000"
+            android:textColor="@color/colorPrimaryDark"
 
-            android:layout_weight="55"
+            android:layout_weight=".6"
             android:textSize="18sp"
             android:gravity="start"
             android:textAlignment="gravity"/>
@@ -83,21 +83,21 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Gender"
-            android:textColor="#000"
-            android:layout_weight="10"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight=".4"
             android:textSize="18sp"
             android:gravity="start"
             android:textAlignment="gravity"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tvGender"
 
-            android:layout_weight="50"
-            android:textColor="#000"
+            android:layout_weight=".6"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp"
             android:gravity="start"
             android:textAlignment="gravity"/>
@@ -109,20 +109,20 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Relation"
-            android:textColor="#000"
-            android:layout_weight="10"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight=".4"
             android:textSize="18sp"
             android:gravity="start"
             android:textAlignment="gravity"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tvRelation"
-            android:textColor="#000"
-            android:layout_weight="60"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight=".6"
             android:textSize="18sp"
 
             android:gravity="start"
@@ -135,22 +135,22 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:textColor="#000"
-            android:layout_weight="10"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight=".4"
             android:textSize="18sp"
             android:gravity="start"
             android:textAlignment="gravity"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tvEmail"
             android:textSize="18sp"
-            android:layout_weight="47"
-            android:textColor="#000"
-            android:layout_marginLeft="10dp"
+            android:layout_weight=".6"
+            android:textColor="@color/colorPrimaryDark"
+
             android:gravity="start"
             android:textAlignment="gravity"/>
     </LinearLayout>
@@ -161,20 +161,20 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Mobile"
-            android:layout_weight="10"
+            android:layout_weight=".4"
             android:textSize="18sp"
-            android:textColor="#000"
+            android:textColor="@color/colorPrimaryDark"
             android:gravity="start"
             android:textAlignment="gravity"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tvMobile"
-            android:textColor="#000"
-            android:layout_weight="48"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight=".6"
             android:textSize="18sp"
 
             android:gravity="start"
@@ -187,7 +187,7 @@
         android:text="Edit Info"
         android:id="@+id/btUpdate"
         android:textColor="#fff"
-        android:background="#000"
+        android:background="@color/colorPrimaryDark"
         android:textSize="18sp"/>
 
 </LinearLayout>

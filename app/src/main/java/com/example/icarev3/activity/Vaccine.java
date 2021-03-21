@@ -50,7 +50,7 @@ public class Vaccine extends AppCompatActivity {
             array_list.add(vaccineListDetails.get(i).get("title"));
         }
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, array_list);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, R.layout.vaccine_list_item,R.id.tvVaccineListItem, array_list);
         vaccineListView.setAdapter(arrayAdapter);
 
         addVaccine.setOnClickListener(new View.OnClickListener() {

@@ -6,21 +6,26 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#000">
+        android:background="@color/colorPrimaryDark">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Appointment"
             android:layout_weight="60"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:gravity="center"
             android:textColor="#fff"/>
-        <ImageButton
-            android:layout_width="30dp"
-            android:layout_height="40dp"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add New"
+            android:id="@+id/ivAddAppointment"
             android:src="@drawable/addicon"
-            android:layout_weight="20"
-            android:id="@+id/ivAddAppointment"/>
+            android:layout_marginRight="30dp"
+            />
+
+
         </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"

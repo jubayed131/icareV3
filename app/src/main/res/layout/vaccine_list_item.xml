@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
-        android:id="@+id/icon"
+        android:id="@+id/icon_vaccine"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginRight="6dip"
@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvProfileListItem"
+        android:id="@+id/tvVaccineListItem"
         android:textSize="22sp"
         android:textColor="@color/colorPrimaryDark"
         android:padding="7dp"

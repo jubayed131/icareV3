@@ -12,7 +12,7 @@
         android:gravity="center"
         android:textSize="30sp"
         android:textColor="#fff"
-        android:background="@color/growthstatus"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginBottom="20dp"/>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/growthstatus"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:text="Height:"
             android:layout_marginBottom="5dp"/>
@@ -69,7 +69,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/growthstatus"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:text="Weight:"
             android:layout_marginBottom="5dp"/>
@@ -112,7 +112,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/growthstatus"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:text="Blood sugar:"
             android:layout_marginBottom="5dp"/>
@@ -155,7 +155,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/growthstatus"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:text="Blood Pressure:"
             android:layout_marginBottom="5dp"/>

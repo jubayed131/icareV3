@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -22,7 +23,7 @@ import java.util.HashMap;
 
 
 public class Appointment extends AppCompatActivity {
-    ImageButton addAppointment;
+    ImageView addAppointment;
     Integer profileId;
     ListView appointmentListView;
     DBHelper mydb;
@@ -32,7 +33,7 @@ public class Appointment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.appointment);
-        addAppointment = (ImageButton) findViewById(R.id.ivAddAppointment);
+        addAppointment = (ImageView) findViewById(R.id.ivAddAppointment);
         Intent intent = getIntent();
         profileId = intent.getIntExtra("profile_id", 0);
         appointmentListView = (ListView) findViewById(R.id.lvAppointment);

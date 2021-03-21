@@ -7,7 +7,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@color/vaccine">
+        android:background="@color/colorPrimaryDark">
 
         <TextView
             android:layout_width="wrap_content"
@@ -22,8 +22,8 @@
             />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="2"
             android:layout_marginRight="30dp"
             android:src="@drawable/addicon"
@@ -36,7 +36,7 @@
 
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:divider="@color/vaccine"
+        android:divider="@color/colorPrimaryDark"
         android:dividerHeight="2dp"
         android:background="@color/white"
         android:id="@+id/vaccineListView">

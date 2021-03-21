@@ -21,6 +21,8 @@ public class DBHelper extends SQLiteOpenHelper {
     private HashMap hp;
     ArrayList<HashMap<String, String>> hashMapArrayList;
 
+
+
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }

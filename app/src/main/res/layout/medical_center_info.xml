@@ -9,7 +9,7 @@
         android:padding="10dp"
         android:textSize="30sp"
         android:gravity="center"
-        android:background="@color/infocenter"
+        android:background="@color/colorPrimaryDark"
         android:textColor="#fff"
         android:layout_marginBottom="20dp"/>
     <LinearLayout
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Name :"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginLeft="10dp"
         />
     <TextView
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="Mobile :"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginLeft="10dp"/>
     <TextView
         android:layout_width="fill_parent"
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:text="Email :"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginLeft="10dp"/>
     <TextView
         android:layout_width="fill_parent"
@@ -96,7 +96,7 @@
         android:text="Call  Health Center"
 
         android:textSize="20sp"
-        android:background="@color/infocenter"
+        android:background="@color/colorPrimaryDark"
         android:textColor="@color/white"
         android:id="@+id/btMedicalCenterCall"
 
@@ -109,7 +109,7 @@
         android:text="Update"
 
         android:textSize="20sp"
-        android:background="@color/infocenter"
+        android:background="@color/colorPrimaryDark"
         android:textColor="@color/white"
         android:id="@+id/btMedicalCenterUpdate"
         android:padding="10dp"
