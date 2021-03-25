@@ -4,16 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
-        android:id="@+id/icon_vaccine"
+        android:id="@+id/icon_medical_center_list_item"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginRight="6dip"
-        android:src="@drawable/vaccines" />
+        android:src="@drawable/medical_center"/>
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvVaccineListItem"
+        android:id="@+id/tvMedicalCenterListItem"
         android:textSize="22sp"
         android:textColor="@color/colorPrimaryDark"
         android:padding="7dp"

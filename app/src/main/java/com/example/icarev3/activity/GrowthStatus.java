@@ -46,7 +46,7 @@ public class GrowthStatus extends AppCompatActivity {
         HashMap<String, String> map = new HashMap<String, String>();
 
         map = dbHelper.getAboutOneProfile(profileId);
-        Toast.makeText(getApplicationContext(), "" + map.get("weight"), Toast.LENGTH_SHORT).show();
+       // Toast.makeText(getApplicationContext(), "" + map.get("weight"), Toast.LENGTH_SHORT).show();
         prevWeight.setText(map.get("weight_prev") + " Kg");
         presentWeight.setText(map.get("weight") + " Kg");
         prevHeight.setText(map.get("height_prev") + " inches");

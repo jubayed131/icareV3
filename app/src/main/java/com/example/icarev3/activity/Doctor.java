@@ -45,7 +45,7 @@ public class Doctor extends AppCompatActivity {
             array_list.add(doctorListDetail.get(i).get("name"));
         }
         //  Toast.makeText(this,profileListArray.get(0).get("id").toString(),Toast.LENGTH_LONG).show();
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, array_list);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, R.layout.doctor_list_item,R.id.tvVDoctorListItem, array_list);
         DoctorListView.setAdapter(arrayAdapter);
         DoctorListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -1,19 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="10dp"
-    >
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarHomeScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/Theme.AppCompat.Light" />
+
+        <ImageButton
+            android:id="@+id/backButtonHomescreen"
+            android:layout_width="61dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/backNav"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarHomeScreen"
+            app:layout_constraintEnd_toEndOf="@+id/toolbarHomeScreen"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="@+id/toolbarHomeScreen"
+            app:layout_constraintTop_toTopOf="@+id/toolbarHomeScreen"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_arrow_back_white" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <GridView
         android:id="@+id/gridView1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-       android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
         android:gravity="center"
-      android:layout_margin="5dp"
-        android:numColumns="3" >
+        android:numColumns="3">
 
     </GridView>
 </LinearLayout>

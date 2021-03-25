@@ -35,7 +35,7 @@ public class MedicalCenter extends AppCompatActivity {
         setContentView(R.layout.medical_center);
         Intent intent = getIntent();
         profileId = intent.getIntExtra("profile_id", 0);
-        Toast.makeText(getApplicationContext(), "" + profileId, Toast.LENGTH_SHORT).show();
+       // Toast.makeText(getApplicationContext(), "" + profileId, Toast.LENGTH_SHORT).show();
         medicalCenterListView = (ListView) findViewById(R.id.healthCareList);
         addMedicalCenter = (ImageView) findViewById(R.id.ivAddMedicalCenter);
         medicalCenterList = new ArrayList<HashMap<String, String>>();
@@ -47,7 +47,7 @@ public class MedicalCenter extends AppCompatActivity {
             array_list.add(medicalCenterList.get(i).get("name"));
 
         }
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, array_list);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, R.layout.medical_center_list_item,R.id.tvMedicalCenterListItem, array_list);
         medicalCenterListView.setAdapter(arrayAdapter);
 
         medicalCenterListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
