@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.icarev3.MainActivity;
 import com.example.icarev3.R;
 import com.example.icarev3.adapter.GridAdapter;
 
@@ -25,7 +28,8 @@ public class HomeScreen extends AppCompatActivity {
             R.drawable.emmergency};
 
     Integer profileId;
-
+    ImageButton imageButtonBack;
+    TextView toolbarProfileName;
     // ArrayList<String> gridTitle;
     //  ArrayList<Integer> gridImage;
 
@@ -33,10 +37,19 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_screen);
+        imageButtonBack=(ImageButton)findViewById(R.id.backButtonHomescreen);
+        toolbarProfileName=(TextView)findViewById(R.id.tvHomeProfileName);
         mainGridView = (GridView) findViewById(R.id.gridView1);
         Intent intent = getIntent();
         profileId = intent.getIntExtra("profile_id", 0);
 
+        toolbarProfileName.setText(intent.getStringExtra("profile_name"));
+        imageButtonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, MainActivity.class));
+            }
+        });
         mainGridView.setAdapter(new GridAdapter(getApplicationContext(), gridTitle, gridImage));
         mainGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -110,5 +123,8 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
+
+
     }
+
 }

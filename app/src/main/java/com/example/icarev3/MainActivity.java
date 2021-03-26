@@ -68,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                 profileId = Integer.parseInt(profileListArray.get(position).get("id"));
 
+
                 intent.putExtra("profile_id", profileId);
+                intent.putExtra("profile_name",profileListArray.get(position).get("name").toString() );
                 startActivity(intent);
 
             }
